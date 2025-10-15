@@ -86,15 +86,20 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0); ; // Your code here. C is 67.
+let thirdCodePoint = inputString1.charCodeAt(2); // Your code here d is 100.
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let wordFromCodePoints = String.fromCharCode(72, 101, 108, 108); // Your code here. The word is Hell
 
 // Task 3
-let inputString2 = "Launch";
-let swappedString; // Your code here
+let inputString3 = "Launch";
+let firstCharCode2 = inputString3.charCodeAt(0); // 'L'
+let lastCharCode2 = inputString3.charCodeAt(inputString3.length - 1); // 'h'
+
+let firstChar2 = String.fromCharCode(firstCharCode2);
+let lastChar2 = String.fromCharCode(lastCharCode2);
+let swappedString = lastChar2 + inputString3.slice(1, -1) + firstChar2; // Your code here
 
 // Log all results
 console.log({
